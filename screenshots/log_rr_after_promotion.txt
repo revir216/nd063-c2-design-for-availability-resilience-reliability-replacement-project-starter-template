@@ -1,0 +1,26 @@
+MySQL [udacity]> UPDATE test SET name = 'Selena' WHERE id = 1;
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+MySQL [udacity]> UPDATE test SET name = 'Selena' WHERE id = 1;
+ERROR 2013 (HY000): Lost connection to MySQL server during query
+MySQL [udacity]> UPDATE test SET name = 'Selena' WHERE id = 1;
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    10
+Current database: udacity
+
+Query OK, 1 row affected (0.015 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MySQL [udacity]> UPDATE test SET name = 'Selena' WHERE id = 1;
+Query OK, 0 rows affected (0.004 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+MySQL [udacity]> SELECT * FROM test;
++------+--------+
+| id   | name   |
++------+--------+
+|    1 | Selena |
++------+--------+
+1 row in set (0.001 sec)
+
+MySQL [udacity]> 
